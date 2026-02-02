@@ -8,11 +8,15 @@ export function DoublePage() {
   return (
     <div className="phase-page">
       <nav className="page-nav">
-        <Link to="/" className="back-link">← 返回首页</Link>
-        <span className="nav-title">第三阶段 / 双字词组</span>
+        <div className="page-nav-inner">
+          <Link to="/" className="back-link">← 返回首页</Link>
+          <span className="nav-title">第三阶段 / 双字词组</span>
+        </div>
       </nav>
 
-      <PhraseTraining type="double" phraseCount={30} />
+      <main className="phase-content">
+        <PhraseTraining type="double" phraseCount={30} />
+      </main>
     </div>
   );
 }
@@ -21,11 +25,15 @@ export function QuadPage() {
   return (
     <div className="phase-page">
       <nav className="page-nav">
-        <Link to="/" className="back-link">← 返回首页</Link>
-        <span className="nav-title">第三阶段 / 四字词组</span>
+        <div className="page-nav-inner">
+          <Link to="/" className="back-link">← 返回首页</Link>
+          <span className="nav-title">第三阶段 / 四字词组</span>
+        </div>
       </nav>
 
-      <PhraseTraining type="quad" phraseCount={30} />
+      <main className="phase-content">
+        <PhraseTraining type="quad" phraseCount={30} />
+      </main>
     </div>
   );
 }
@@ -34,11 +42,15 @@ export function RhythmPage() {
   return (
     <div className="phase-page">
       <nav className="page-nav">
-        <Link to="/" className="back-link">← 返回首页</Link>
-        <span className="nav-title">第三阶段 / 节奏训练</span>
+        <div className="page-nav-inner">
+          <Link to="/" className="back-link">← 返回首页</Link>
+          <span className="nav-title">第三阶段 / 节奏训练</span>
+        </div>
       </nav>
 
-      <RhythmTraining />
+      <main className="phase-content">
+        <RhythmTraining />
+      </main>
     </div>
   );
 }
