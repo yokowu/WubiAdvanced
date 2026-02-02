@@ -1,0 +1,165 @@
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.home-header h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.home-header .subtitle {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.recent-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 48px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.recent-stats .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-stats .stat-value {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+
+.recent-stats .stat-label {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.phases {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.phase {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.phase-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.phase-info h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.phase-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0 0 0;
+}
+
+.phase-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.module-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.module-card:hover {
+  background: #333;
+}
+
+.module-card:hover .module-title,
+.module-card:hover .module-desc {
+  color: white;
+}
+
+.module-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.module-desc {
+  font-size: 12px;
+  color: #666;
+}
+
+.goal-section {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.goal-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.goals {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.goal-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.goal-icon {
+  font-size: 16px;
+}

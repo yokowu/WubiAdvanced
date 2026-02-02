@@ -1,0 +1,41 @@
+.input-display {
+  display: flex;
+  gap: 8px;
+  padding: 16px 24px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+}
+
+.input-char {
+  width: 40px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+
+.input-char.empty {
+  color: #444;
+}
+
+.input-char.filled {
+  color: #4caf50;
+}
+
+.input-char.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    border-bottom-color: #4caf50;
+  }
+  51%, 100% {
+    border-bottom-color: transparent;
+  }
+}

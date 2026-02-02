@@ -1,0 +1,84 @@
+.char-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 8px;
+  background: white;
+  border: 2px solid #eee;
+  transition: all 0.2s ease;
+}
+
+.char-display.small {
+  width: 48px;
+  height: 56px;
+}
+
+.char-display.medium {
+  width: 80px;
+  height: 96px;
+}
+
+.char-display.large {
+  width: 160px;
+  height: 180px;
+}
+
+.char-display .char {
+  font-weight: 500;
+}
+
+.char-display.small .char {
+  font-size: 24px;
+}
+
+.char-display.medium .char {
+  font-size: 48px;
+}
+
+.char-display.large .char {
+  font-size: 96px;
+}
+
+.char-display .code {
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.char-display.small .code {
+  font-size: 10px;
+}
+
+.char-display.medium .code {
+  font-size: 14px;
+}
+
+.char-display.large .code {
+  font-size: 24px;
+}
+
+/* 状态样式 */
+.char-display.pending {
+  opacity: 0.5;
+}
+
+.char-display.current {
+  border-color: #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+  opacity: 1;
+}
+
+.char-display.correct {
+  border-color: #4caf50;
+  background: #f1f8f4;
+  opacity: 1;
+}
+
+.char-display.wrong {
+  border-color: #f44336;
+  background: #fef2f2;
+  opacity: 1;
+}

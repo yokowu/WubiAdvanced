@@ -1,0 +1,33 @@
+.phase-page {
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.back-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #333;
+}
+
+.nav-title {
+  font-size: 14px;
+  color: #999;
+}
+
+.training-container {
+  padding: 24px;
+}

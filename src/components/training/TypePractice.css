@@ -1,0 +1,409 @@
+.type-practice {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.type-practice .training-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.type-practice .training-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.type-practice .training-header .description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* 开始面板 */
+.type-practice .start-panel {
+  text-align: center;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.type-practice .start-panel p {
+  margin-bottom: 16px;
+  color: #555;
+}
+
+.type-practice .start-panel .tip {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.type-practice .start-button {
+  padding: 12px 36px;
+  font-size: 1.1rem;
+  background: #4a90d9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.type-practice .start-button:hover {
+  background: #357abd;
+}
+
+/* 练习内容区域 */
+.type-practice .practice-content {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px 0;
+}
+
+/* 文本行 */
+.type-practice .text-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+  min-height: 48px;
+}
+
+.type-practice .current-line {
+  font-size: 1.5rem;
+}
+
+.type-practice .next-line {
+  font-size: 1.1rem;
+  opacity: 0.5;
+}
+
+/* 练习项目（字/词） */
+.type-practice .practice-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2em;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.type-practice .practice-item.pending {
+  color: #999;
+  background: transparent;
+}
+
+.type-practice .practice-item.current {
+  color: #333;
+  background: #e3f2fd;
+  box-shadow: 0 0 0 2px #2196f3;
+  font-weight: 500;
+}
+
+.type-practice .practice-item.correct {
+  color: #2e7d32;
+  background: #e8f5e9;
+}
+
+.type-practice .practice-item.wrong {
+  color: #c62828;
+  background: #ffebee;
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+/* 输入区域 */
+.type-practice .input-area {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.type-practice .input-buffer {
+  font-size: 2rem;
+  font-family: 'Courier New', Consolas, monospace;
+  padding: 8px 24px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  min-width: 120px;
+  text-align: center;
+  color: #333;
+  letter-spacing: 4px;
+}
+
+.type-practice .space-hint {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 4px;
+  letter-spacing: 0;
+}
+
+/* 编码提示 */
+.type-practice .code-hint {
+  text-align: center;
+  padding: 12px;
+  background: #fff8e1;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.type-practice .hint-label {
+  color: #666;
+  margin-right: 8px;
+}
+
+.type-practice .hint-code {
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e65100;
+  letter-spacing: 4px;
+}
+
+/* 进度条 */
+.type-practice .progress-bar {
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.type-practice .progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* 控制按钮 */
+.type-practice .controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.type-practice .stop-button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background: #757575;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.type-practice .stop-button:hover {
+  background: #616161;
+}
+
+/* 响应式调整 */
+@media (max-width: 600px) {
+  .type-practice .current-line {
+    font-size: 1.2rem;
+  }
+
+  .type-practice .next-line {
+    font-size: 0.9rem;
+  }
+
+  .type-practice .input-buffer {
+    font-size: 1.5rem;
+    min-width: 80px;
+  }
+}
+
+/* 训练报告 */
+.type-practice .training-report {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+}
+
+.type-practice .report-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* 基本统计 */
+.type-practice .report-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.type-practice .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  background: white;
+  border-radius: 8px;
+  min-width: 100px;
+}
+
+.type-practice .stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.type-practice .stat-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* 历史最佳对比 */
+.type-practice .best-record {
+  margin: 24px 0;
+  padding: 16px;
+  background: #fff8e1;
+  border-radius: 8px;
+}
+
+.type-practice .best-record h4 {
+  margin-bottom: 12px;
+  color: #f57c00;
+}
+
+.type-practice .comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.type-practice .compare-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.95rem;
+}
+
+.type-practice .compare-label {
+  color: #666;
+  min-width: 60px;
+  text-align: right;
+}
+
+.type-practice .compare-current {
+  font-weight: bold;
+  color: #333;
+}
+
+.type-practice .compare-vs {
+  color: #999;
+}
+
+.type-practice .compare-best {
+  color: #666;
+}
+
+.type-practice .new-record {
+  color: #e65100;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 2px 8px;
+  background: #fff3e0;
+  border-radius: 4px;
+}
+
+/* 错误字词列表 */
+.type-practice .problem-list {
+  margin: 24px 0;
+  padding: 16px;
+  background: #ffebee;
+  border-radius: 8px;
+}
+
+.type-practice .problem-list h4 {
+  margin-bottom: 12px;
+  color: #c62828;
+}
+
+.type-practice .problem-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.type-practice .problem-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #ffcdd2;
+}
+
+.type-practice .problem-char {
+  font-size: 1.1rem;
+  color: #c62828;
+}
+
+.type-practice .problem-code {
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* 操作按钮 */
+.type-practice .report-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.type-practice .action-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.type-practice .action-btn:hover {
+  background: #d0d0d0;
+}
+
+.type-practice .action-btn.primary {
+  background: #4a90d9;
+  color: white;
+}
+
+.type-practice .action-btn.primary:hover {
+  background: #357abd;
+}
+
+.type-practice .action-btn.secondary {
+  background: #ff9800;
+  color: white;
+}
+
+.type-practice .action-btn.secondary:hover {
+  background: #f57c00;
+}
