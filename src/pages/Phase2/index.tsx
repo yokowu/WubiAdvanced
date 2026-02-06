@@ -8,11 +8,15 @@ export function Level1Page() {
   return (
     <div className="phase-page">
       <nav className="page-nav">
-        <Link to="/" className="back-link">← 返回首页</Link>
-        <span className="nav-title">第二阶段 / 一级简码</span>
+        <div className="page-nav-inner">
+          <Link to="/" className="back-link">← 返回首页</Link>
+          <span className="nav-title">第二阶段 / 一级简码</span>
+        </div>
       </nav>
 
-      <Level1Training />
+      <main className="phase-content">
+        <Level1Training />
+      </main>
     </div>
   );
 }
@@ -21,11 +25,15 @@ export function Level2Page() {
   return (
     <div className="phase-page">
       <nav className="page-nav">
-        <Link to="/" className="back-link">← 返回首页</Link>
-        <span className="nav-title">第二阶段 / 二级简码</span>
+        <div className="page-nav-inner">
+          <Link to="/" className="back-link">← 返回首页</Link>
+          <span className="nav-title">第二阶段 / 二级简码</span>
+        </div>
       </nav>
 
-      <Level2Training charCount={50} />
+      <main className="phase-content">
+        <Level2Training charCount={50} />
+      </main>
     </div>
   );
 }
